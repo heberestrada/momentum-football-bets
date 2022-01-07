@@ -83,7 +83,7 @@ def main(args):
         action="store",
         dest="days_ahead",
         type=check_days_ahead,
-        default=4,
+        default=7,
         help="Number of days ahead to get fixtures from.",
     )
     parser.add_argument(
@@ -106,6 +106,13 @@ def main(args):
     l_competitions = [("PREMIER LEAGUE", "https://www.skysports.com/premier-league-fixtures"),
                       ("CHAMPIONSHIP", "https://www.skysports.com/championship-fixtures"),
                       ("LEAGUE ONE", "https://www.skysports.com/league-1-fixtures"),
+                      ("SERIE A", "https://www.skysports.com/serie-a-fixtures"),
+                      ("BUNDESLIGA", "https://www.skysports.com/bundesliga-fixtures"),
+                      ("LA LIGA", "https://www.skysports.com/la-liga-fixtures"),
+                      ("EREDIVISIE", "https://www.skysports.com/eredivisie-fixtures"),
+                      ("Ligue 1", "https://www.skysports.com/ligue-1-fixtures"),
+                      ("Champions League", "https://www.skysports.com/champions-league-fixtures"),
+                      ("Europa League", "https://www.skysports.com/europa-league-fixtures"),
                       ("LEAGUE TWO", "https://www.skysports.com/league-2-fixtures"),]
 
     print("")
